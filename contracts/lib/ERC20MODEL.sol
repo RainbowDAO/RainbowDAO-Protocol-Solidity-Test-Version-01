@@ -449,12 +449,14 @@ contract ERC20MODEL{
     //     _mint(owner, totalSupply);
     // }
     address public owner;
+    address public tokenaddr;
     constructor(address owner_) public {
         owner = owner_;
     }
     
     function creatToken(string memory tokenName_,string memory symbol_,uint8 decimals_, address owner_,uint totalSupply_) public returns(address){
         address token = address(new ERC20(tokenName_,symbol_,decimals_,owner_,totalSupply_));
+        tokenaddr = token;
         return token;
     }
 }
