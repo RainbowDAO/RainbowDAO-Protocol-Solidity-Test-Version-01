@@ -131,7 +131,7 @@ using Set for Set.Address;
         auth = _auth;
         vault = _vault;
     }
-    
+   
     
     function getApplyingLength() public view returns(uint){
         return applying.length();
