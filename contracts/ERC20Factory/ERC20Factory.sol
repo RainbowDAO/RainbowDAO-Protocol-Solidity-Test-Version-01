@@ -426,7 +426,6 @@ contract ERC20 is Context {
     function _setupDecimals(uint8 decimals_) internal {
         _decimals = decimals_;
     }
-
     /**
      * @dev Hook that is called before any transfer of tokens. This includes
      * minting and burning.
